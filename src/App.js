@@ -2,6 +2,8 @@ import './App.css';
 import  {ReactComponent as Logo} from "./assets/shared/logo.svg";
 
 function App() {
+
+	
   return (
     <div className="App">
 	  <div className="header">
