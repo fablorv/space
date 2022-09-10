@@ -1,13 +1,14 @@
 body {
 	margin:0px;
 
- 	background-image: url("./assets/home/background-home-desktop.jpg");
-	background-repeat: no-repeat;
-	background-size: cover cover;
 }
 
 
 .App {
+ 	background-image: url("./assets/home/background-home-desktop.jpg");
+	background-repeat: no-repeat;
+	background-size:cover cover;
+
   margin: 0px;
   text-align: center;
 }
@@ -173,7 +174,6 @@ button.circle-hover::before {
   background-color: rgba(250,250,250, 0.1);
   border-radius: 100%;
   position: absolute;
-  z-index: -1;
 }
 
 button.circle-hover:hover::before {
