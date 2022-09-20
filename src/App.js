@@ -3,10 +3,39 @@ import  {ReactComponent as Logo} from "./assets/shared/logo.svg";
 import {useState} from 'react'
 
 function App() {
-
+	//i think best way to do it just make useeffect hook and everytime u click u refresh iq and trigger the function taht sends info to the other function about data
 	const [data, setData] = useState('')
 	
-		const parentToChild = () => {setData("this is data for the other thing ig " )}
+	
+			const homeig = () =>{
+				setData("home clicked")
+			}
+			const destinationig = () =>{
+				setData("destination clicked")
+			}
+			const crewig = () =>{
+				setData("crew clicked")
+			}
+			const techig = () =>{
+				setData("tech clicked")
+			}
+
+		switch(data) {
+			case 'home clicked':
+				console.log(data)
+			break;
+			case 'crew clicked':
+				console.log(data)
+			break;
+			case 'destination clicked':
+				console.log(data)
+			break;
+			case 'tech clicked':
+				console.log(data)
+			break;
+			default:
+				console.log("this is the default of the switch thingy")
+		}
 		 return (
 		    <div className="App">
 			  <div className="header">
@@ -14,13 +43,13 @@ function App() {
 					<Logo />
 				</div>
 				<div className="buttonscontrol">
-					<button className="home" onClick={() => parentToChild()}>00 HOME </button>
-					<button className="destination">01 DESTINATION </button>
-					<button className="crew">02 CREW  </button>
-					<button className="technology">03 TECHNOLOGY </button>
+					<button className="home" onClick={() => homeig()}>00 HOME </button>
+					<button className="destination" onClick={() => destinationig()}>01 DESTINATION </button>
+					<button className="crew"onClick={() => crewig()}>02 CREW  </button>
+					<button className="technology" onClick={()=> techig()}>03 TECHNOLOGY </button>
 				</div>
 			  </div>
-			 <Condition parentToChild={data}/>
+			 <Condition data/>
 		     </div>
 		  );
 
@@ -113,11 +142,12 @@ const Technology = () =>{
 		</div>
 	)
 }
-const Condition = ({parentToChild}) =>{
-	if (false){
+const Condition = (props) =>{
+	if (true){
+		
 		return(
 			<div>
-				{parentToChild}	
+				{props.data}	
 				<Home/>
 			</div>
 		)
@@ -125,8 +155,8 @@ const Condition = ({parentToChild}) =>{
 		return <Testing/>
 	}else if (false){
 		return <Destination />
-	}else if (true){
+	}else if (false){
 		return <Technology/>
-	}
+	}else console.log("this is else")
 }
 export default App;
