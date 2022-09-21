@@ -8,16 +8,16 @@ function App() {
 	
 	
 			const homeig = () =>{
-				setData("home clicked")
+				setData({state:"home clicked"})
 			}
 			const destinationig = () =>{
-				setData("destination clicked")
+				setData({state:"destination clicked"})
 			}
 			const crewig = () =>{
-				setData("crew clicked")
+				setData({state:"crew clicked"})
 			}
 			const techig = () =>{
-				setData("tech clicked")
+				setData({state:"tech clicked"})
 			}
 
 		switch(data) {
@@ -34,7 +34,7 @@ function App() {
 				console.log(data)
 			break;
 			default:
-				console.log("this is the default of the switch thingy")
+				console.log(data)
 		}
 		 return (
 		    <div className="App">
@@ -49,7 +49,7 @@ function App() {
 					<button className="technology" onClick={()=> techig()}>03 TECHNOLOGY </button>
 				</div>
 			  </div>
-			 <Condition data/>
+			 <Condition state={data.state}/>
 		     </div>
 		  );
 
@@ -143,19 +143,19 @@ const Technology = () =>{
 	)
 }
 const Condition = (props) =>{
-	if (true){
+	if (props.state === "home clicked"){
 		
 		return(
 			<div>
-				{props.data}	
+				{props.state}	
 				<Home/>
 			</div>
 		)
-	}else if (false){
+	}else if (props.state === "destination clicked"){
 		return <Testing/>
-	}else if (false){
+	}else if (props.state === "crew clicked"){
 		return <Destination />
-	}else if (false){
+	}else if (props.state === "tech clicked"){
 		return <Technology/>
 	}else console.log("this is else")
 }
