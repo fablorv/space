@@ -41,10 +41,8 @@ body {
 	backdrop-filter: blur(10px);
 }
 .home, .destination, .crew, .technology{
-	text-decoration:none;
-	display: inline-block;
-	text-align:center;
-	border:none;
+	
+	all: unset;
 	background-color:rgba(234, 240, 246, 0);
 	color: #FFFFFF;
 	font-family: 'Barlow Condensed';
@@ -181,4 +179,92 @@ button.circle-hover:hover::before {
   left: -88px;
   bottom: -88px;
   right: -88px;
+}
+
+.pickdest{
+
+	font-family: 'Barlow Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 34px;
+	/* identical to box height */
+
+	letter-spacing: 4.725px;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+.bottomPart{
+	display:flex;
+	flex-direction:row;
+}
+.planetbuttons button{
+	all:unset;
+	font-family: 'Barlow Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-decoration:none;
+	display: inline-block;
+	text-align:center;
+	border:none;
+
+	padding:35px;
+	color: #FFFFFF;
+}
+
+.moonb{
+	font-family: 'Bellefair';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 100px;
+	line-height: 115px;
+	/* identical to box height */
+
+
+	color: #FFFFFF;
+}
+
+.moonpara{
+	font-family: 'Barlow';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	/* or 178% */
+
+
+	color: #D0D6F9;
+}
+
+.lastparamoon{
+
+	font-family: 'Barlow';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	/* or 178% */
+
+
+	color: #D0D6F9;
+}
+
+.lastparamoonb{
+
+	font-family: 'Barlow';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	/* or 178% */
+
+
+	color: #D0D6F9;
+}
+.buttonDetails{
+	width: 445px;
+	height: 472px;
 }
