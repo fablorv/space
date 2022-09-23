@@ -194,10 +194,14 @@ button.circle-hover:hover::before {
 	text-transform: uppercase;
 
 	color: #FFFFFF;
+	padding-right:56rem;
 }
 .bottomPart{
 	display:flex;
 	flex-direction:row;
+	padding-left:230px;
+	padding-top:64px;
+	
 }
 .planetbuttons button{
 	all:unset;
@@ -267,4 +271,9 @@ button.circle-hover:hover::before {
 .buttonDetails{
 	width: 445px;
 	height: 472px;
+}
+
+.moonpicture{
+	width:450px;
+	padding-right:157px;
 }

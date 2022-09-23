@@ -1,5 +1,6 @@
 import './App.css';
 import  {ReactComponent as Logo} from "./assets/shared/logo.svg";
+import moonpic from "./assets/destination/image-moon.png";
 import {useState} from 'react'
 
 function App() {
@@ -20,27 +21,12 @@ function App() {
 				setData({state:"tech clicked"})
 			}
 
-		switch(data) {
-			case 'home clicked':
-				console.log(data)
-			break;
-			case 'crew clicked':
-				console.log(data)
-			break;
-			case 'destination clicked':
-				console.log(data)
-			break;
-			case 'tech clicked':
-				console.log(data)
-			break;
-			default:
-				console.log(data)
-		}
 		 return (
 		    <div className="App">
 			  <div className="header">
 				<div className="logo">
-					<Logo />
+			ean
+			 <Logo />
 				</div>
 				<div className="buttonscontrol">
 					<button className="home" onClick={() => homeig()}>00 HOME </button>
@@ -64,7 +50,7 @@ const Testing = () =>{
 
 			<p className="pickdest"> 01 PICK YOUR DESTINATION</p>
 			<div className="bottomPart">
-				<p>moon pic here</p>
+				<img src={moonpic} alt="moon pic here i believe" className="moonpicture" />
 				<div className="buttonDetails">
 					<div className="planets">
 						<div className="planetbuttons">
