@@ -59,10 +59,14 @@ const Testing = () =>{
 							<button className="europat"> EUROPA </button>
 							<button className="titant">TITAN</button>
 						</div>
-						<p className="moonb"> MOON </p>
-						<p className="moonpara">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites</p>
-						<p className="lastparamoon">Avg. distance 384,400 km Est.</p>
-						<p className="lastparamoonb">travel time 3 days</p>
+							<p className="moonb"> MOON </p>
+						
+							<p className="moonpara">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites</p>
+							
+						<div className="bottomparagraph">
+							<p className="lastparamoon">Avg. distance</p><p className="travel">travel time</p><p className="distnumbers"> 384,400 km Est.</p>
+<p className="travelnumbers">3 days</p>
+						</div>
 					</div>
 					
 				</div>

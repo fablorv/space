@@ -207,26 +207,28 @@ button.circle-hover:hover::before {
 	all:unset;
 	font-family: 'Barlow Condensed';
 	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 19px;
 	text-decoration:none;
 	display: inline-block;
 	text-align:center;
 	border:none;
-
-	padding:35px;
+	padding-right:33px;
+	padding-bottom:37px;
 	color: #FFFFFF;
+}
+.planetbuttons{
+	width:285.5px;
 }
 
 .moonb{
 	font-family: 'Bellefair';
 	font-style: normal;
-	font-weight: 400;
+	margin: 0;
 	font-size: 100px;
 	line-height: 115px;
 	/* identical to box height */
-
+	width:333px;
 
 	color: #FFFFFF;
 }
@@ -268,6 +270,47 @@ button.circle-hover:hover::before {
 
 	color: #D0D6F9;
 }
+.distnumbers{
+
+font-family: 'Bellefair';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 32px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+}
+.travel{
+	font-family: 'Barlow';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	/* or 178% */
+
+
+	color: #D0D6F9;
+
+
+}
+.travelnumbers{
+
+	font-family: 'Bellefair';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 32px;
+	/* identical to box height */
+
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}	
 .buttonDetails{
 	width: 445px;
 	height: 472px;
@@ -277,3 +320,17 @@ button.circle-hover:hover::before {
 	width:450px;
 	padding-right:157px;
 }
+
+.insideDest body {
+	background-image: url("./assets/destination/background-destination-desktop.jpg");
+}
+
+.bottomparagraph{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.bottomparagraph p{
+	margin:0;
+}
+
