@@ -21,6 +21,7 @@ function App() {
 				setData({state:"tech clicked"})
 			}
 
+
 		 return (
 		    <div className="App">
 			  <div className="header">
@@ -44,7 +45,22 @@ function App() {
  }
 
 const Testing = () =>{
+
+	const [planet, setPlanet] = useState('')
 	console.log("from testing")
+			const moont = () =>{
+				setPlanet({planet:"moon"})
+			}
+			const marst = () =>{
+				setPlanet({planet:"marst"})
+			}
+			const titant = () =>{
+				setPlanet({planet:"titant"})
+			}
+			const europat = () =>{
+				setPlanet({planet:"europat"})
+			}
+
 	return(
 		<div className="insideDesti">
 
@@ -54,15 +70,16 @@ const Testing = () =>{
 				<div className="buttonDetails">
 					<div className="planets">
 						<div className="planetbuttons">
-							<button className="moont">MOON </button>
-							<button className="marst">MARS </button>
-							<button className="europat"> EUROPA </button>
-							<button className="titant">TITAN</button>
+							<button className="moont" onClick={() =>moont()}>MOON </button>
+							<button className="marst" onClick={() =>marst()}>MARS </button>
+							<button className="europat" onClick={() =>europat()}> EUROPA </button>
+							<button className="titant" onClick={() =>titant()}>TITAN</button>
+							<SmallCondition stato={planet.stato}/>
 						</div>
 							<p className="moonb"> MOON </p>
 						
-							<p className="moonpara">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites</p>
-							
+							<p className="moonpara">See our planet as you’ve never seen it before.A perfect relaxing trip away to help regain perspective and come back refreshed .While you’re there,take in some history by visiting the Luna 2 and Apollo 11 landing sites</p>
+							<div className="linepara"></div>	
 						<div className="bottomparagraph">
 							<p className="lastparamoon">Avg. distance</p><p className="travel">travel time</p><p className="distnumbers"> 384,400 km Est.</p>
 <p className="travelnumbers">3 days</p>
@@ -73,6 +90,39 @@ const Testing = () =>{
 			</div>
 						
 		</div>	
+	)
+}
+
+const Moont = () =>{
+	return(
+		<div className="Moont">
+			<p>
+				this sohuld have this paragraph that translate to that ig ? 
+			</p>
+		</div>
+	)
+}
+
+const Marst = ()=>{
+	return(
+		<div className="Marst">
+			<p> weh ave mars stuff here ig </p>
+		</div>
+	)
+}
+
+const Europat = ()=>{
+	return(
+		<div className="Europat">
+			<p> this is for europa planet ig </p>
+		</div>
+	)
+}
+const Titant = ()=>{
+	return(
+		<div className="Titant">
+			<p> this is for titan planet ig hope it wokrs </p>
+		</div>
 	)
 }
 
@@ -149,5 +199,27 @@ const Condition = (props) =>{
 	}else if (props.state === "tech clicked"){
 		return <Technology/>
 	}else console.log("this is else")
+}
+
+const SmallCondition = () =>{
+	if(true){
+		return(
+			<Marst/>
+		)
+
+	}else if (false){
+		return(
+			<Titant/>
+		)
+	}else if(false){
+		return(
+
+			<Moont/>
+		)
+	}else if (false){
+		return(
+			<Europat/>
+		)
+	}else console.log('its not working ig')
 }
 export default App;
