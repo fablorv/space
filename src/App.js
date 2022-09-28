@@ -47,7 +47,7 @@ function App() {
 const Testing = () =>{
 
 	const [planet, setPlanet] = useState('')
-	console.log("from testing")
+	console.log(planet)
 			const moont = () =>{
 				setPlanet({planet:"moon"})
 			}
@@ -70,19 +70,11 @@ const Testing = () =>{
 				<div className="buttonDetails">
 					<div className="planets">
 						<div className="planetbuttons">
-							<button className="moont" onClick={() =>moont()}>MOON </button>
-							<button className="marst" onClick={() =>marst()}>MARS </button>
-							<button className="europat" onClick={() =>europat()}> EUROPA </button>
-							<button className="titant" onClick={() =>titant()}>TITAN</button>
+							<button className="moont" onClick={() => moont()}>MOON </button>
+							<button className="marst" onClick={() => marst()}>MARS </button>
+							<button className="europat" onClick={() => europat()}> EUROPA </button>
+							<button className="titant" onClick={() => titant()}>TITAN</button>
 							<SmallCondition stato={planet.stato}/>
-						</div>
-							<p className="moonb"> MOON </p>
-						
-							<p className="moonpara">See our planet as you’ve never seen it before.A perfect relaxing trip away to help regain perspective and come back refreshed .While you’re there,take in some history by visiting the Luna 2 and Apollo 11 landing sites</p>
-							<div className="linepara"></div>	
-						<div className="bottomparagraph">
-							<p className="lastparamoon">Avg. distance</p><p className="travel">travel time</p><p className="distnumbers"> 384,400 km Est.</p>
-<p className="travelnumbers">3 days</p>
 						</div>
 					</div>
 					
@@ -96,9 +88,14 @@ const Testing = () =>{
 const Moont = () =>{
 	return(
 		<div className="Moont">
-			<p>
-				this sohuld have this paragraph that translate to that ig ? 
-			</p>
+				<p className="moonb"> MOON </p>
+						
+				<p className="moonpara">See our planet as you’ve never seen it before.A perfect relaxing trip away to help regain perspective and come back refreshed .While you’re there,take in some history by visiting the Luna 2 and Apollo 11 landing sites</p>
+				<div className="linepara"></div>	
+				<div className="bottomparagraph">
+							<p className="lastparamoon">Avg. distance</p><p className="travel">Est. travel time</p><p className="distnumbers"> 384,400 km </p><p className="travelnumbers">3 days</p>
+				</div>
+
 		</div>
 	)
 }
@@ -201,8 +198,9 @@ const Condition = (props) =>{
 	}else console.log("this is else")
 }
 
-const SmallCondition = () =>{
-	if(true){
+const SmallCondition = (props) =>{
+	console.log(props.stato)
+	if(false){
 		return(
 			<Marst/>
 		)
@@ -211,7 +209,7 @@ const SmallCondition = () =>{
 		return(
 			<Titant/>
 		)
-	}else if(false){
+	}else if(true){
 		return(
 
 			<Moont/>

@@ -219,7 +219,21 @@ button.circle-hover:hover::before {
 .planetbuttons{
 	width:300px;
 }
+.moont {
+		border-bottom: 3px solid rgba(255,255,255, 0);
+}
+button.marst{
+	border-bottom: 3px solid rgba(255,255,255, 0);
 
+}
+button.europat{
+	border-bottom: 3px solid rgba(255,255,255, 0);
+
+}
+button.titant {
+	border-bottom: 3px solid rgba(255,255,255, 0);
+
+}
 .moont:hover{
 		border-bottom: 3px solid rgba(255,255,255, 0.5);
 }
@@ -255,8 +269,9 @@ button.circle-hover:hover::before {
 	font-size: 18px;
 	line-height: 32px;
 	/* or 178% */
-	padding-right:28px;
 	padding-bottom:54px;
+	margin:0px;
+	width:444px;
 	color: #D0D6F9;
 }
 
@@ -287,16 +302,16 @@ button.circle-hover:hover::before {
 }
 .distnumbers{
 
-font-family: 'Bellefair';
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 32px;
-/* identical to box height */
-
-text-transform: uppercase;
-
-color: #FFFFFF;
+	font-family: 'Bellefair';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 32px;
+	/* identical to box height */
+	margin-right:80px;
+	text-transform: uppercase;
+	width:143px;
+	color: #FFFFFF;
 
 
 }
@@ -343,7 +358,8 @@ color: #FFFFFF;
 
 .bottomparagraph{
 	display:grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 5fr 4fr;
+	width:344px;
 }
 
 .bottomparagraph p{
