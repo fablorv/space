@@ -1,6 +1,7 @@
 import './App.css';
 import  {ReactComponent as Logo} from "./assets/shared/logo.svg";
 import moonpic from "./assets/destination/image-moon.png";
+import marspic from "./assets/destination/image-mars.png";
 import {useState} from 'react'
 
 function App() {
@@ -26,7 +27,6 @@ function App() {
 		    <div className="App">
 			  <div className="header">
 				<div className="logo">
-			ean
 			 <Logo />
 				</div>
 				<div className="buttonscontrol">
@@ -47,26 +47,30 @@ function App() {
 const Testing = () =>{
 
 	const [planet, setPlanet] = useState('')
+	const [planetpic, setPlanetPic] = useState('')
 	console.log(planet)
-			const moont = () =>{
-				setPlanet({planet:"moon"})
-			}
-			const marst = () =>{
-				setPlanet({planet:"marst"})
-			}
-			const titant = () =>{
-				setPlanet({planet:"titant"})
-			}
-			const europat = () =>{
-				setPlanet({planet:"europat"})
-			}
+	const moont = () =>{
+		setPlanet({planet:"moon"})
+		setPlanetPic('moonpic')
+	}
+	const marst = () =>{
+		setPlanet({planet:"marst"})
+		setPlanetPic('marspic')
+	}
+	const titant = () =>{
+		setPlanet({planet:"titant"})
+	}
+	const europat = () =>{
+		setPlanet({planet:"europat"})
+	}
 
+	console.log(planetpic)
 	return(
 		<div className="insideDesti">
 
 			<p className="pickdest"> 01 PICK YOUR DESTINATION</p>
 			<div className="bottomPart">
-				<img src={moonpic} alt="moon pic here i believe" className="moonpicture" />
+				<img src={planetpic} alt="moon pic here i believe" className="moonpicture" />
 				<div className="buttonDetails">
 					<div className="planets">
 						<div className="planetbuttons">
@@ -74,7 +78,7 @@ const Testing = () =>{
 							<button className="marst" onClick={() => marst()}>MARS </button>
 							<button className="europat" onClick={() => europat()}> EUROPA </button>
 							<button className="titant" onClick={() => titant()}>TITAN</button>
-							<SmallCondition stato={planet.stato}/>
+							<SmallCondition stato={planet.planet}/>
 						</div>
 					</div>
 					
@@ -185,7 +189,6 @@ const Condition = (props) =>{
 		
 		return(
 			<div>
-				{props.state}	
 				<Home/>
 			</div>
 		)
@@ -195,29 +198,29 @@ const Condition = (props) =>{
 		return <Destination />
 	}else if (props.state === "tech clicked"){
 		return <Technology/>
-	}else console.log("this is else")
+	}else return <Home/>
 }
 
 const SmallCondition = (props) =>{
 	console.log(props.stato)
-	if(false){
+	if(props.stato === "marst"){
 		return(
 			<Marst/>
 		)
 
-	}else if (false){
+	}else if (props.stato === "titant"){
 		return(
 			<Titant/>
 		)
-	}else if(true){
+	}else if(props.stato === "moon"){
 		return(
 
 			<Moont/>
 		)
-	}else if (false){
+	}else if (props.stato === "europat"){
 		return(
 			<Europat/>
 		)
-	}else console.log('its not working ig')
+	}else return ( <Moont/>);
 }
 export default App;
