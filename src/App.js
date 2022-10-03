@@ -2,6 +2,8 @@ import './App.css';
 import  {ReactComponent as Logo} from "./assets/shared/logo.svg";
 import moonpic from "./assets/destination/image-moon.png";
 import marspic from "./assets/destination/image-mars.png";
+import titanpic from "./assets/destination/image-titan.png";
+import europapic from "./assets/destination/image-europa.png";
 import {useState} from 'react'
 
 function App() {
@@ -49,6 +51,8 @@ const Testing = () =>{
 	const [planet, setPlanet] = useState('')
 	const [planetpic, setPlanetPic] = useState('')
 	console.log(planet)
+
+
 	const moont = () =>{
 		setPlanet({planet:"moon"})
 		setPlanetPic('moonpic')
@@ -59,18 +63,31 @@ const Testing = () =>{
 	}
 	const titant = () =>{
 		setPlanet({planet:"titant"})
+		setPlanetPic('titanpic')
 	}
 	const europat = () =>{
 		setPlanet({planet:"europat"})
+		setPlanetPic('europapic')
 	}
-
+	let plantopic 
+	if(planetpic === "moonpic"){
+		plantopic =	<img src={moonpic} alt="moon pic here i believe" className="moonpicture" />
+	}else if( planetpic === "marspic"){
+		plantopic = <img src={marspic} alt="moon pic here i believe" className="moonpicture" />
+	}else if (planetpic === "titanpic"){
+		plantopic = <img src={titanpic} alt="moon pic here i believe" className="moonpicture" />
+	}else if(planetpic === "europapic"){
+		plantopic = <img src={europapic} alt="moon pic here i believe" className="moonpicture" />
+	}else {plantopic =	<img src={moonpic} alt="moon pic here i believe" className="moonpicture" />}
+	
 	console.log(planetpic)
 	return(
 		<div className="insideDesti">
 
 			<p className="pickdest"> 01 PICK YOUR DESTINATION</p>
 			<div className="bottomPart">
-				<img src={planetpic} alt="moon pic here i believe" className="moonpicture" />
+			
+				{plantopic}
 				<div className="buttonDetails">
 					<div className="planets">
 						<div className="planetbuttons">
@@ -91,15 +108,17 @@ const Testing = () =>{
 
 const Moont = () =>{
 	return(
-		<div className="Moont">
-				<p className="moonb"> MOON </p>
-						
-				<p className="moonpara">See our planet as you’ve never seen it before.A perfect relaxing trip away to help regain perspective and come back refreshed .While you’re there,take in some history by visiting the Luna 2 and Apollo 11 landing sites</p>
-				<div className="linepara"></div>	
-				<div className="bottomparagraph">
-							<p className="lastparamoon">Avg. distance</p><p className="travel">Est. travel time</p><p className="distnumbers"> 384,400 km </p><p className="travelnumbers">3 days</p>
-				</div>
+		<div className="moonplanet">
+			<div className="Moont">
+					<p className="moonb"> MOON </p>
+							
+					<p className="moonpara">See our planet as you’ve never seen it before.A perfect relaxing trip away to help regain perspective and come back refreshed .While you’re there,take in some history by visiting the Luna 2 and Apollo 11 landing sites</p>
+					<div className="linepara"></div>	
+					<div className="bottomparagraph">
+								<p className="lastparamoon">Avg. distance</p><p className="travel">Est. travel time</p><p className="distnumbers"> 384,400 km </p><p className="travelnumbers">3 days</p>
+					</div>
 
+			</div>
 		</div>
 	)
 }
@@ -107,7 +126,17 @@ const Moont = () =>{
 const Marst = ()=>{
 	return(
 		<div className="Marst">
-			<p> weh ave mars stuff here ig </p>
+			<div className="Moont">
+					<p className="moonb"> MARS</p>
+							
+					<p className="moonpara">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+					<div className="linepara"></div>	
+					<div className="bottomparagraph">
+								<p className="lastparamoon">Avg. distance</p><p className="travel">Est. travel time</p><p className="distnumbers">255mil.km</p><p className="travelnumbers">9 months</p>
+					</div>
+
+			</div>
+
 		</div>
 	)
 }
@@ -115,19 +144,38 @@ const Marst = ()=>{
 const Europat = ()=>{
 	return(
 		<div className="Europat">
-			<p> this is for europa planet ig </p>
+			<div className="Moont">
+					<p className="moonb"> EUROPA </p>
+							
+					<p className="moonpara">Europa The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin</p>
+					<div className="linepara"></div>	
+					<div className="bottomparagraph">
+								<p className="lastparamoon">Avg. distance</p><p className="travel">Est. travel time</p><p className="distnumbers">628Mil.km</p><p className="travelnumbers">3 years</p>
+					</div>
+
+			</div>
 		</div>
 	)
 }
 const Titant = ()=>{
 	return(
 		<div className="Titant">
-			<p> this is for titan planet ig hope it wokrs </p>
+			<div className="Moont">
+					<p className="moonb"> TITAN</p>
+							
+					<p className="moonpara">Titan The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+					<div className="linepara"></div>	
+					<div className="bottomparagraph">
+								<p className="lastparamoon">Avg. distance</p><p className="travel">Est. travel time</p><p className="distnumbers"> 1.6bil.km </p><p className="travelnumbers">7 years</p>
+					</div>
+
+			</div>
 		</div>
 	)
 }
 
-const Home = () =>{ console.log("from home")
+const Home = () =>{ 
+	console.log("from home")
 	return(
 		 <div className="textandexplore">
 			<div className="text">
