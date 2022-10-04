@@ -4,6 +4,11 @@ import moonpic from "./assets/destination/image-moon.png";
 import marspic from "./assets/destination/image-mars.png";
 import titanpic from "./assets/destination/image-titan.png";
 import europapic from "./assets/destination/image-europa.png";
+
+import douglaspic from "./assets/crew/image-douglas-hurley.png";
+import anoushespic from "./assets/crew/image-anousheh-ansari.png";
+import markpic from "./assets/crew/image-mark-shuttleworth.png";
+import victorpic from "./assets/crew/image-victor-glover.png";
 import {useState} from 'react'
 
 function App() {
@@ -190,24 +195,69 @@ const Home = () =>{
 	)
 }
 
-const Destination = () =>{
+const Crew = () =>{
 	console.log("from desitionation")
 	return(
 		<div className="crewd">
-			<p> 02 Meet your crew Commander </p>
-			<div className="crewstuff">
-				<div className="crewparag">
-					<p>COMMANDER </p>
-					<p>DOUGLAS HURLEY </p>
-					<p> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
-				</div>
-				<p> here should be a pic </p>
-
-			</div>
+			<p className="meetcrew"> <span className="meetcrewnumber"> 02 </span><span className="meetcrewp">Meet your crew Commander</span> </p>
+			<Douglas/>
 			<button className="first"/>
 			<button className="second"/>
 			<button className="third"/>
 			<button className="fourth"/>
+		</div>
+	)
+}
+
+const Douglas = () =>{
+	return(
+		<div className="crewstuff">
+			<div className="crewparag">
+				<p className="comm">COMMANDER  </p>
+				<p className="comname">DOUGLAS HURLEY </p>
+				<p className="compara"> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+			</div>
+			<img src={douglaspic} alt="douglas pic here" className="compic" />
+
+		</div>
+	)
+}
+const Mark = () =>{
+	return(
+		<div className="crewstuff">
+			<div className="crewparag">
+				<p className="comm">COMMANDER  </p>
+				<p className="comname">DOUGLAS HURLEY </p>
+				<p className="compara"> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+			</div>
+			<img src={markpic} alt="douglas pic here" className="compic" />
+
+		</div>
+	)
+}
+const Anoushes = () =>{
+	return(
+		<div className="crewstuff">
+			<div className="crewparag">
+				<p className="comm">COMMANDER  </p>
+				<p className="comname">DOUGLAS HURLEY </p>
+				<p className="compara"> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+			</div>
+			<img src={anoushespic} alt="douglas pic here" className="compic" />
+
+		</div>
+	)
+}
+const Victor = () =>{
+	return(
+		<div className="crewstuff">
+			<div className="crewparag">
+				<p className="comm">COMMANDER  </p>
+				<p className="comname">DOUGLAS HURLEY </p>
+				<p className="compara"> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+			</div>
+			<img src={victorpic} alt="douglas pic here" className="compic" />
+
 		</div>
 	)
 }
@@ -243,7 +293,7 @@ const Condition = (props) =>{
 	}else if (props.state === "destination clicked"){
 		return <Testing/>
 	}else if (props.state === "crew clicked"){
-		return <Destination />
+		return <Crew />
 	}else if (props.state === "tech clicked"){
 		return <Technology/>
 	}else return <Home/>

@@ -370,3 +370,104 @@ button.titant {
 	border-top: 1px solid ;
 background: #383B4B;
 }
+
+
+
+.meetcrew{
+	font-family: 'Barlow Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 34px;
+	/* identical to box height */
+	padding-left: 166px;
+	letter-spacing: 4.725px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.meetcrewp{
+
+	font-family: 'Barlow Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 34px;
+	/* identical to box height */
+
+	letter-spacing: 4.725px;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+.meetcrewnumber{
+	font-family: 'Barlow Condensed';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 34px;
+	/* identical to box height */
+
+	letter-spacing: 4.725px;
+
+	color: #FFFFFF;
+
+	mix-blend-mode: normal;
+	opacity: 0.25;
+}
+
+.comm{
+	font-family: 'Bellefair';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 37px;
+	/* identical to box height */
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+
+	mix-blend-mode: normal;
+	opacity: 0.5;
+}
+
+.comname{
+	font-family: 'Bellefair';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 56px;
+	line-height: 64px;
+	text-transform: uppercase;
+
+	padding-top:15px;
+	padding-bottom:27px;
+	color: #FFFFFF;
+}
+
+.compara{
+
+	font-family: 'Barlow';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	/* or 178% */
+
+
+	color: #D0D6F9;
+}
+.comm , .comname, .compara{
+	margin:0;
+}
+.crewparag{
+	width:488px;
+	padding-left:165px;
+	float:left;
+	padding-right:81px;	
+	padding-top:154px;
+}
+
+.first,.second,.third,.fourth{
+	border-radius:100%;
+	width:15px;
+}
+
