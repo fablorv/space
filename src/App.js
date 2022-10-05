@@ -201,10 +201,12 @@ const Crew = () =>{
 		<div className="crewd">
 			<p className="meetcrew"> <span className="meetcrewnumber"> 02 </span><span className="meetcrewp">Meet your crew Commander</span> </p>
 			<Douglas/>
-			<button className="first"/>
-			<button className="second"/>
-			<button className="third"/>
-			<button className="fourth"/>
+			<div className="crewbuttons">
+				<button className="first"/>
+				<button className="second"/>
+				<button className="third"/>
+				<button className="fourth"/>
+			</div>
 		</div>
 	)
 }

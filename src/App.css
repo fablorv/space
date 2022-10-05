@@ -469,5 +469,34 @@ background: #383B4B;
 .first,.second,.third,.fourth{
 	border-radius:100%;
 	width:15px;
+	padding:0;
+	margin:0;
+	border:0;
+	background: #FFFFFF;
+	mix-blend-mode: normal;
+	opacity: 0.17;
 }
 
+.first:hover{
+	background: #FFFFFF;
+	opacity: 1;
+}
+.second:hover{
+	background: #FFFFFF;
+	opacity: 1;
+}
+.third:hover{
+	background: #FFFFFF;
+	opacity: 1;
+}
+.fourth:hover{
+	background: #FFFFFF;
+	opacity: 1;
+}
+.crewbuttons{
+	display:flex;
+	justify-content:space-between;
+	width:132px;
+
+	height:15px;
+}
