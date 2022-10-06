@@ -5,11 +5,11 @@ body {
 
 
 .App {
- 	background-image: url("./assets/home/background-home-desktop.jpg");
 	background-repeat: no-repeat;
-	background-size:cover cover;
+	background-size: cover;
+	height:100vh;
+	margin:0px;
 
-  margin: 0px;
 }
 
 .App-link {
@@ -469,34 +469,37 @@ background: #383B4B;
 .first,.second,.third,.fourth{
 	border-radius:100%;
 	width:15px;
+	height:15px;
 	padding:0;
 	margin:0;
 	border:0;
 	background: #FFFFFF;
-	mix-blend-mode: normal;
 	opacity: 0.17;
+	mix-blend-mode: normal;
 }
 
 .first:hover{
 	background: #FFFFFF;
-	opacity: 1;
+opacity:0.91;
 }
 .second:hover{
 	background: #FFFFFF;
-	opacity: 1;
+	opacity:0.91;
+	
 }
 .third:hover{
 	background: #FFFFFF;
-	opacity: 1;
+	opacity:0.91;
 }
 .fourth:hover{
 	background: #FFFFFF;
-	opacity: 1;
+	opacity: 0.91;
 }
 .crewbuttons{
-	display:flex;
-	justify-content:space-between;
 	width:132px;
-
+	display:inline;
 	height:15px;
+}
+.douglos{
+	display:inline;
 }

@@ -9,29 +9,38 @@ import douglaspic from "./assets/crew/image-douglas-hurley.png";
 import anoushespic from "./assets/crew/image-anousheh-ansari.png";
 import markpic from "./assets/crew/image-mark-shuttleworth.png";
 import victorpic from "./assets/crew/image-victor-glover.png";
+import homebackground from "./assets/home/background-home-desktop.jpg";
+
+import technologybackground from "./assets/technology/background-technology-desktop.jpg";
+import crewbackground from "./assets/crew/background-crew-desktop.jpg";
+import destinationbackground from "./assets/destination/background-destination-desktop.jpg";
 import {useState} from 'react'
 
 function App() {
 	//i think best way to do it just make useeffect hook and everytime u click u refresh iq and trigger the function taht sends info to the other function about data
 	const [data, setData] = useState('')
-	
+	const [ctyle, setCtyle] = useState({backgroundImage: `url(${homebackground})` })	
 	
 			const homeig = () =>{
 				setData({state:"home clicked"})
+				setCtyle({backgroundImage: `url(${homebackground})` })
 			}
 			const destinationig = () =>{
 				setData({state:"destination clicked"})
+				setCtyle({backgroundImage:`url(${destinationbackground})`}) 
+
 			}
 			const crewig = () =>{
 				setData({state:"crew clicked"})
+				setCtyle({backgroundImage:`url(${crewbackground})`})
 			}
 			const techig = () =>{
 				setData({state:"tech clicked"})
+				setCtyle({backgroundImage:`url(${technologybackground})`})
 			}
-
-
+		console.log(ctyle)
 		 return (
-		    <div className="App">
+		    <div className="App" style={ctyle}>
 			  <div className="header">
 				<div className="logo">
 			 <Logo />
@@ -200,13 +209,14 @@ const Crew = () =>{
 	return(
 		<div className="crewd">
 			<p className="meetcrew"> <span className="meetcrewnumber"> 02 </span><span className="meetcrewp">Meet your crew Commander</span> </p>
-			<Douglas/>
 			<div className="crewbuttons">
 				<button className="first"/>
 				<button className="second"/>
 				<button className="third"/>
 				<button className="fourth"/>
 			</div>
+			
+			<Douglas className="douglos"/>
 		</div>
 	)
 }
