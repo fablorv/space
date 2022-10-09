@@ -110,6 +110,7 @@ const Testing = () =>{
 							<button className="europat" onClick={() => europat()}> EUROPA </button>
 							<button className="titant" onClick={() => titant()}>TITAN</button>
 							<SmallCondition stato={planet.planet}/>
+								
 						</div>
 					</div>
 					
@@ -206,20 +207,36 @@ const Home = () =>{
 
 const Crew = () =>{
 	console.log("from desitionation")
+	const	[crewto , setCrewto] = useState('')
+	const	douglas = () =>{
+		setCrewto({crewto:"douglas"})
+	}
+	const	anousheh = () =>{
+		setCrewto({crewto:"anousheh"})
+	}
+	const	mark = () =>{
+		setCrewto({crewto:"mark"})
+	}
+	const	victor = () =>{
+		setCrewto({crewto:"victor"})
+	}
+	let testing = "fuck you ig"
+	console.log(crewto)
 	return(
 		<div className="crewd">
 			<p className="meetcrew"> <span className="meetcrewnumber"> 02 </span><span className="meetcrewp">Meet your crew Commander</span> </p>
+			<Crewcondition testing={crewto.crewto} className="douglos" />
 			<div className="crewbuttons">
-				<button className="first"/>
-				<button className="second"/>
-				<button className="third"/>
-				<button className="fourth"/>
+				<button className="first" onClick={() => douglas()}/>
+				<button className="second"onClick={() => mark()}/>
+				<button className="third"onClick={() => anousheh()}/>
+				<button className="fourth"onClick={() => victor()}/>
 			</div>
 			
-			<Douglas className="douglos"/>
 		</div>
 	)
 }
+
 
 const Douglas = () =>{
 	return(
@@ -332,5 +349,18 @@ const SmallCondition = (props) =>{
 			<Europat/>
 		)
 	}else return ( <Moont/>);
+}
+
+const Crewcondition = (props) =>{
+	console.log(props.crewto)
+	if(props.crewto === "douglas"){
+		return <Douglas/>
+	}else if(props.crewto === "mark"){
+		return <Mark />
+	}else if(props.crewto ==="anoushes"){
+		return <Anoushes/>
+	}else if(props.crewto ==="victor"){
+		return <Victor/>
+	}else return (<Douglas/>);
 }
 export default App;

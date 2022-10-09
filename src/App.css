@@ -7,7 +7,7 @@ body {
 .App {
 	background-repeat: no-repeat;
 	background-size: cover;
-	height:100vh;
+	height:100%;
 	margin:0px;
 
 }
@@ -497,7 +497,7 @@ opacity:0.91;
 }
 .crewbuttons{
 	width:132px;
-	display:inline;
+	display:contents;
 	height:15px;
 }
 .douglos{
