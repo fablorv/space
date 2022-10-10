@@ -225,7 +225,7 @@ const Crew = () =>{
 	return(
 		<div className="crewd">
 			<p className="meetcrew"> <span className="meetcrewnumber"> 02 </span><span className="meetcrewp">Meet your crew Commander</span> </p>
-			<Crewcondition testing={crewto.crewto} className="douglos" />
+			<Crewcondition {...crewto} className="douglos" />
 			<div className="crewbuttons">
 				<button className="first" onClick={() => douglas()}/>
 				<button className="second"onClick={() => mark()}/>
@@ -351,15 +351,15 @@ const SmallCondition = (props) =>{
 	}else return ( <Moont/>);
 }
 
-const Crewcondition = (props) =>{
-	console.log(props.crewto)
-	if(props.crewto === "douglas"){
+const Crewcondition = ({crewto}) =>{
+	console.log(crewto)
+	if(crewto === "douglas"){
 		return <Douglas/>
-	}else if(props.crewto === "mark"){
+	}else if(crewto === "mark"){
 		return <Mark />
-	}else if(props.crewto ==="anoushes"){
+	}else if(crewto ==="anousheh"){
 		return <Anoushes/>
-	}else if(props.crewto ==="victor"){
+	}else if(crewto ==="victor"){
 		return <Victor/>
 	}else return (<Douglas/>);
 }
