@@ -503,3 +503,91 @@ opacity:0.91;
 .douglos{
 	display:inline;
 }
+
+
+
+.technum{
+	font-family: 'Barlow Condensed';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 34px;
+	/* identical to box height */
+
+	letter-spacing: 4.725px;
+
+	color: #FFFFFF;
+
+	mix-blend-mode: normal;
+	opacity: 0.25;
+}
+.spacelaunch{
+	font-family: 'Barlow Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 34px;
+	/* identical to box height */
+
+	letter-spacing: 4.725px;
+
+	color: #FFFFFF;
+}
+
+.terminology{
+	font-family: 'Barlow Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 2.7px;
+
+	color: #D0D6F9;
+}
+
+.launch{
+	font-family: 'Bellefair';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 56px;
+	line-height: 64px;
+
+	color: #FFFFFF;
+}
+
+.techpara{
+
+	font-family: 'Barlow';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	/* or 178% */
+
+
+	color: #D0D6F9;
+}
+
+
+.techparag{
+	width:470px;
+}
+
+.circleone , .circletwo, .circlethree{
+	all:unset;
+	width: 80px;
+	height: 80px;
+	border-radius:50%;
+	font-family: 'Bellefair';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 37px;
+	/* identical to box height */
+	border: 1px  solid #FFFFFF;
+	text-align: center;
+	letter-spacing: 2px;
+	mix-blend-mode: normal;
+	opacity: 0.25;
+	color: #FFFFFF;
+}

@@ -220,7 +220,6 @@ const Crew = () =>{
 	const	victor = () =>{
 		setCrewto({crewto:"victor"})
 	}
-	let testing = "fuck you ig"
 	console.log(crewto)
 	return(
 		<div className="crewd">
@@ -294,20 +293,56 @@ const Technology = () =>{
 	console.log("from destination")
 	return(
 		<div className="technologyD">
-			<p>   Space launch 101</p>
+			<p>  <span className="technum"> 03</span><span className="spacelaunch"> Space launch 101 </span></p>
 			<div className="techbottom">
 				<div className="techbuttons">
 					<button className="circleone"> 1 </button>
 					<button className="circletwo"> 2 </button>
 					<button className="circlethree"> 3 </button>
 				</div>
-				<div className="techparag">
-					<p>THE TERMINOLOGY...</p>
-					<p> LAUNCH VEHICLE</p>
-					<p>  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
-				</div>
-				<p> and simply a pic here </p>
+				<Launch/>
 			</div>
+		</div>
+	)
+}
+
+const Launch =() =>{
+	return (
+		<div className="launchdiv">
+			<div className="techparag">
+				<p className="terminology">THE TERMINOLOGY...</p>
+				<p className="launch"> LAUNCH VEHICLE</p>
+				<p className="techpara">  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+			</div>
+			<p> and simply a pic here </p>
+
+		</div>
+	)
+}
+const Spaceport =() =>{
+	return (
+		<div className="launchdiv">
+			<div className="techparag">
+				<p className="terminology">THE TERMINOLOGY...</p>
+				<p className="launch"> SPACEPORT</p>
+				<p className="techpara">  A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</p>
+			</div>
+			<p> and simply a pic here </p>
+
+		</div>
+	)
+}
+
+const Spacecapsule =() =>{
+	return (
+		<div className="launchdiv">
+			<div className="techparag">
+				<p className="terminology">THE TERMINOLOGY...</p>
+				<p className="launch"> SPACE CAPSULE</p>
+				<p className="techpara">  Space capsule A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
+			</div>
+			<p> and simply a pic here </p>
+
 		</div>
 	)
 }
