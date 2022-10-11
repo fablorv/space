@@ -12,6 +12,15 @@ body {
 
 }
 
+@media  screen and (max-width:1440px){
+	.app{
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin:0px;
+
+	}
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -551,10 +560,13 @@ opacity:0.91;
 	font-weight: 400;
 	font-size: 56px;
 	line-height: 64px;
-
 	color: #FFFFFF;
 }
-
+.launchdiv{
+	display:flex;
+	flex-direction:row;
+	padding-left:80px;
+}
 .techpara{
 
 	font-family: 'Barlow';
@@ -591,3 +603,30 @@ opacity:0.91;
 	opacity: 0.25;
 	color: #FFFFFF;
 }
+
+.circleone:hover{
+	background-color:white;
+	opacity: 1;
+	color:black;
+}
+.circletwo:hover{
+	background-color:white;
+	opacity: 1;
+	color:black;
+}
+.circlethree:hover{
+	background-color:white;
+	opacity: 1;
+	color:black;
+}
+.techbottom{
+	display:flex;
+}
+.techbuttons{
+	display:flex;
+	flex-direction: column;
+	justify-content:space-between;
+	padding-left:165px;
+}
+
+

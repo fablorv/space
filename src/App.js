@@ -14,6 +14,10 @@ import homebackground from "./assets/home/background-home-desktop.jpg";
 import technologybackground from "./assets/technology/background-technology-desktop.jpg";
 import crewbackground from "./assets/crew/background-crew-desktop.jpg";
 import destinationbackground from "./assets/destination/background-destination-desktop.jpg";
+
+import spacecappic from "./assets/technology/image-space-capsule-portrait.jpg"
+import spaceportpic from "./assets/technology/image-spaceport-portrait.jpg"
+import launchpic from "./assets/technology/image-launch-vehicle-portrait.jpg";
 import {useState} from 'react'
 
 function App() {
@@ -291,16 +295,26 @@ const Victor = () =>{
 }
 const Technology = () =>{
 	console.log("from destination")
+	const [tech , setTech] = useState('')
+	const circleone = () =>{
+		setTech({tech:"circleone"})
+	}
+	const circletwo = () =>{
+		setTech({tech:"circletwo"})
+	}
+	const circlethree = () =>{
+		setTech({tech:"circlethree"})
+	}
 	return(
 		<div className="technologyD">
 			<p>  <span className="technum"> 03</span><span className="spacelaunch"> Space launch 101 </span></p>
 			<div className="techbottom">
 				<div className="techbuttons">
-					<button className="circleone"> 1 </button>
-					<button className="circletwo"> 2 </button>
-					<button className="circlethree"> 3 </button>
+					<button className="circleone" onClick={()=> circleone()}> 1 </button>
+					<button className="circletwo" onClick={()=> circletwo()}> 2 </button>
+					<button className="circlethree" onClick={()=> circlethree()}> 3 </button>
 				</div>
-				<Launch/>
+				<Techcondition {...tech}/>
 			</div>
 		</div>
 	)
@@ -314,7 +328,8 @@ const Launch =() =>{
 				<p className="launch"> LAUNCH VEHICLE</p>
 				<p className="techpara">  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
 			</div>
-			<p> and simply a pic here </p>
+			<img src={launchpic} alt="launchpichere" className="launchpic" />
+
 
 		</div>
 	)
@@ -327,7 +342,7 @@ const Spaceport =() =>{
 				<p className="launch"> SPACEPORT</p>
 				<p className="techpara">  A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</p>
 			</div>
-			<p> and simply a pic here </p>
+			<img src={spaceportpic} alt="space port pichere" className="launchpic" />
 
 		</div>
 	)
@@ -341,7 +356,8 @@ const Spacecapsule =() =>{
 				<p className="launch"> SPACE CAPSULE</p>
 				<p className="techpara">  Space capsule A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
 			</div>
-			<p> and simply a pic here </p>
+			<img src={spacecappic} alt="space capsule here" className="launchpic" />
+
 
 		</div>
 	)
@@ -397,5 +413,15 @@ const Crewcondition = ({crewto}) =>{
 	}else if(crewto ==="victor"){
 		return <Victor/>
 	}else return (<Douglas/>);
+}
+
+const Techcondition = ({tech}) =>{
+	if(tech === "circleone"){
+		return <Launch/>
+	}else if(tech === "circletwo"){
+		return <Spaceport/>
+	}else if(tech === "circlethree"){
+		return <Spacecapsule/>
+	}else return <Launch/>;
 }
 export default App;
