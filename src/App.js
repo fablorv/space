@@ -11,9 +11,14 @@ import markpic from "./assets/crew/image-mark-shuttleworth.png";
 import victorpic from "./assets/crew/image-victor-glover.png";
 import homebackground from "./assets/home/background-home-desktop.jpg";
 
+import homebacktablet from "./assets/home/background-home-tablet.jpg";
 import technologybackground from "./assets/technology/background-technology-desktop.jpg";
 import crewbackground from "./assets/crew/background-crew-desktop.jpg";
 import destinationbackground from "./assets/destination/background-destination-desktop.jpg";
+import technotablet from "./assets/technology/background-technology-tablet.jpg"
+import crewtablet from "./assets/crew/background-crew-tablet.jpg"
+import destinationtablet from "./assets/destination/background-destination-tablet.jpg"
+
 
 import spacecappic from "./assets/technology/image-space-capsule-portrait.jpg"
 import spaceportpic from "./assets/technology/image-spaceport-portrait.jpg"
@@ -24,39 +29,46 @@ function App() {
 	//i think best way to do it just make useeffect hook and everytime u click u refresh iq and trigger the function taht sends info to the other function about data
 	const [data, setData] = useState('')
 	const [ctyle, setCtyle] = useState({backgroundImage: `url(${homebackground})` })	
+	const [everything , setEverything] = useState('homeE')
 	
 			const homeig = () =>{
 				setData({state:"home clicked"})
-				setCtyle({backgroundImage: `url(${homebackground})` })
+				setCtyle({backgroundImage: `url(${homebackground})`})
+				setEverything('homeE')
 			}
 			const destinationig = () =>{
 				setData({state:"destination clicked"})
-				setCtyle({backgroundImage:`url(${destinationbackground})`}) 
+				setCtyle({backgroundImage:`url(${destinationbackground})`})
+				setEverything('destinationE')
 
 			}
 			const crewig = () =>{
 				setData({state:"crew clicked"})
 				setCtyle({backgroundImage:`url(${crewbackground})`})
+				setEverything('crewE')
 			}
 			const techig = () =>{
 				setData({state:"tech clicked"})
 				setCtyle({backgroundImage:`url(${technologybackground})`})
+				setEverything('techE')
 			}
-		console.log(ctyle)
+		console.log(data)
 		 return (
 		    <div className="App" style={ctyle}>
-			  <div className="header">
-				<div className="logo">
-			 <Logo />
-				</div>
-				<div className="buttonscontrol">
-					<button className="home" onClick={() => homeig()}>00 HOME </button>
-					<button className="destination" onClick={() => destinationig()}>01 DESTINATION </button>
-					<button className="crew"onClick={() => crewig()}>02 CREW  </button>
-					<button className="technology" onClick={()=> techig()}>03 TECHNOLOGY </button>
-				</div>
-			  </div>
-			 <Condition state={data.state}/>
+			 <div className={everything}>
+				  <div className="header">
+					<div className="logo">
+				 <Logo />
+					</div>
+					<div className="buttonscontrol">
+						<button className="home" onClick={() => homeig()}>00 HOME </button>
+						<button className="destination" onClick={() => destinationig()}>01 DESTINATION </button>
+						<button className="crew"onClick={() => crewig()}>02 CREW  </button>
+						<button className="technology" onClick={()=> techig()}>03 TECHNOLOGY </button>
+					</div>
+				  </div>
+				 <Condition state={data.state}/>
+			 </div>
 		     </div>
 		  );
 

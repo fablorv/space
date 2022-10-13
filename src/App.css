@@ -12,14 +12,7 @@ body {
 
 }
 
-@media  screen and (max-width:1440px){
-	.app{
-		background-repeat: no-repeat;
-		background-size: cover;
-		margin:0px;
 
-	}
-}
 
 .App-link {
   color: #61dafb;
@@ -629,4 +622,27 @@ opacity:0.91;
 	padding-left:165px;
 }
 
+@media  screen and (max-width:768px){
+	.app{
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin:0px;
 
+	}
+	.textandexplore{
+		flex-direction:column;
+	}
+	.homeE{
+		background-image: url('assets/home/background-home-tablet.jpg');
+		color:black;
+	}
+	.crewE{
+		background-image: url('assets/crew/background-crew-tablet.jpg');
+	}
+	.destinationE{
+		background-image: url('assets/destination/background-destination-tablet.jpg');
+	}
+	.techE{
+		background-image: url('assets/technology/background-technology-tablet.jpg');
+	}
+}
