@@ -1,5 +1,5 @@
 body {
-	margin:0px;
+	margin:0rem;
 
 }
 
@@ -8,7 +8,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height:100vh;
-	margin:0px;
+	margin:0rem;
 
 }
 
@@ -39,7 +39,7 @@ body {
 	height:6rem;
 	width:51.875rem;
 	background: rgba(255, 255, 255, 0.04);
-	backdrop-filter: blur(10px);
+	backdrop-filter: blur(10rem);
 }
 .home, .destination, .crew, .technology{
 	
@@ -49,42 +49,42 @@ body {
 	font-family: 'Barlow Condensed';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
-	line-height: 19px;
-	letter-spacing: 2.7px;
+	font-size: 1rem;
+	line-height: 1.188rem;
+	letter-spacing: 0.169rem;
 }
 .home:hover {
-	border-bottom: 3px solid rgba(255,255,255, 0.5);
+	border-bottom: 0.188rem solid rgba(255,255,255, 0.5);
 	bottom: 50%;
 
 }
 .technology:hover{
-	border-bottom: 3px solid rgba(255,255,255, 0.5);
+	border-bottom: 0.188rem solid rgba(255,255,255, 0.5);
 
 }
 .destination:hover{
-	border-bottom: 3px solid rgba(255,255,255, 0.5);
+	border-bottom: 0.188rem solid rgba(255,255,255, 0.5);
 }
 .crew:hover{
-	border-bottom: 3px solid rgba(255,255,255, 0.5);
+	border-bottom: 0.188rem solid rgba(255,255,255, 0.5);
 
 }
 
 
 .home:active {
-	border-bottom: 3px solid rgba(255,255,2555);
+	border-bottom: 0.188rem solid rgba(255,255,2555);
 	bottom: 50%;
 
 }
 .technology:active{
-	border-bottom: 3px solid rgba(255,255,255);
+	border-bottom: 0.188rem solid rgba(255,255,255);
 
 }
 .destination:active{
-	border-bottom: 3px solid rgba(255,255,255);
+	border-bottom: 0.188rem solid rgba(255,255,255);
 }
 .crew:active{
-	border-bottom: 3px solid rgba(255,255,255);
+	border-bottom: 0.188rem solid rgba(255,255,255);
 
 }
 
@@ -100,21 +100,21 @@ body {
 .textandexplore {
 	display:flex;
 	justify-content:center;
-	margin-top:251px;
+	margin-top:15.688rem;
 }
 .text{
-	margin-right:386px;
+	margin-right:24.125rem;
 
-	width:450px
+	width:28.125rem;
 }
 .text1 {
 	font-family: 'Barlow Condensed';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 28px;
-	line-height: 34px;
+	font-size: 1.75rem;
+	line-height: 2.125rem;
 	color: #D0D6F9;
-	letter-spacing: 4.725px;
+	letter-spacing: 0.295rem;
 	margin:0;
 
 }
@@ -123,7 +123,7 @@ body {
 	font-family: 'Bellefair';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 150px;
+	font-size: 9.375rem;
 	color: #FFFFFF;
 }
 
@@ -131,41 +131,41 @@ body {
 	font-family: 'Barlow';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 32px;
+	font-size: 1.125rem;
+	line-height: 2rem;
 	color: #D0D6F9;
-	height: 128px;
+	height: 8rem;
 }
 .explore{
 	border-radius:50%;
-	width:274px;
-	height:274px;
+	width:17.125rem;
+	height:17.125rem;
 	font-family: 'Bellefair';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 32px;
-	line-height: 37px;
+	font-size: 2rem;
+	line-height: 2.313rem;
 
-	letter-spacing: 2px;
+	letter-spacing: 0.125rem;
 
 	color: #0B0D17;
 }
 
 .explore:hover{
-	padding:200px;
+	padding:12.5rem;
 }
 
 button.circle-hover {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 15.625rem;
+  height: 15.625rem;
   background-color: #FFF;
   color: #000;
   cursor: pointer;
   border-radius: 100%;
-  border: 1px solid #FFF;
+  border: 0.063rem solid #FFF;
   outline: none;
-  margin: 50px;
+  margin: 3.125rem;
 }
 
 button.circle-hover::before {
@@ -176,10 +176,10 @@ button.circle-hover::before {
 }
 
 button.circle-hover:hover::before {
-  top: -88px;
-  left: -88px;
-  bottom: -88px;
-  right: -88px;
+  top: -5.5rem;
+  left: -5.5rem;
+  bottom: -5.5rem;
+  right: -5.5rem;
 }
 
 .pickdest{
@@ -187,11 +187,11 @@ button.circle-hover:hover::before {
 	font-family: 'Barlow Condensed';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 28px;
-	line-height: 34px;
+	font-size:  1.75rem;
+	line-height: 2.125rem;
 	/* identical to box height */
 
-	letter-spacing: 4.725px;
+	letter-spacing: 0.295rem;
 	text-transform: uppercase;
 
 	color: #FFFFFF;
@@ -200,55 +200,55 @@ button.circle-hover:hover::before {
 .bottomPart{
 	display:flex;
 	flex-direction:row;
-	padding-left:230px;
-	padding-top:64px;
+	padding-left:14.375rem;
+	padding-top:4rem;
 	
 }
 .planetbuttons button{
 	all:unset;
 	font-family: 'Barlow Condensed';
 	font-style: normal;
-	font-size: 18px;
-	line-height: 19px;
+	font-size: 1.125rem;
+	line-height: 1.188rem;
 	text-decoration:none;
 	display: inline-block;
 	text-align:center;
 	border:none;
-	margin-right:33px;
-	padding-bottom:15px;
+	margin-right:2.063rem;
+	padding-bottom:0.938rem;
 	color: #FFFFFF;
 }
 .planetbuttons{
-	width:300px;
+	width:18.75rem;
 }
 .moont {
-		border-bottom: 3px solid rgba(255,255,255, 0);
+		border-bottom: 0.188rem solid rgba(255,255,255, 0);
 }
 button.marst{
-	border-bottom: 3px solid rgba(255,255,255, 0);
+	border-bottom:0.188rem solid rgba(255,255,255, 0);
 
 }
 button.europat{
-	border-bottom: 3px solid rgba(255,255,255, 0);
+	border-bottom:0.188rem solid rgba(255,255,255, 0);
 
 }
 button.titant {
-	border-bottom: 3px solid rgba(255,255,255, 0);
+	border-bottom:0.188rem solid rgba(255,255,255, 0);
 
 }
 .moont:hover{
-		border-bottom: 3px solid rgba(255,255,255, 0.5);
+		border-bottom: 0.188rem solid rgba(255,255,255, 0.5);
 }
 .marst:hover{
-	border-bottom: 3px solid rgba(255,255,255, 0.5);
+	border-bottom: 0.188rem solid rgba(255,255,255, 0.5);
 
 }
 .europat:hover{
-	border-bottom: 3px solid rgba(255,255,255, 0.5);
+	border-bottom:0.188rem solid rgba(255,255,255, 0.5);
 
 }
 .titant:hover{
-	border-bottom: 3px solid rgba(255,255,255, 0.5);
+	border-bottom: 0.188rem solid rgba(255,255,255, 0.5);
 
 }
 
@@ -256,11 +256,11 @@ button.titant {
 	font-family: 'Bellefair';
 	font-style: normal;
 	margin: 0;
-	font-size: 100px;
-	line-height: 115px;
+	font-size: 6.25rem;
+	line-height: 7.188rem;
 	/* identical to box height */
-	width:333px;
-	margin-top:30px;
+	width:20.813rem;
+	margin-top:0.117rem;
 	color: #FFFFFF;
 }
 
@@ -268,12 +268,12 @@ button.titant {
 	font-family: 'Barlow';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 32px;
+	font-size: 1.125rem;
+	line-height: 2rem;
 	/* or 178% */
-	padding-bottom:54px;
-	margin:0px;
-	width:444px;
+	padding-bottom:3.375rem;
+	margin:0rem;
+	width:27.75rem;
 	color: #D0D6F9;
 }
 
@@ -282,11 +282,11 @@ button.titant {
 	font-family: 'Barlow';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 32px;
+	font-size: 1.125rem;
+	line-height: 2rem;
 	/* or 178% */
 
-	padding-top: 28px;
+	padding-top: 1.75rem;
 
 	color: #D0D6F9;
 }
@@ -296,8 +296,8 @@ button.titant {
 	font-family: 'Barlow';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 32px;
+	font-size: 1.125rem;
+	line-height: 2rem;
 	/* or 178% */
 
 	color: #D0D6F9;
@@ -307,12 +307,12 @@ button.titant {
 	font-family: 'Bellefair';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 28px;
-	line-height: 32px;
+	font-size: 1.75rem;
+	line-height: 2rem;
 	/* identical to box height */
-	margin-right:80px;
+	margin-right:80rem;
 	text-transform: uppercase;
-	width:143px;
+	width:8.938rem;
 	color: #FFFFFF;
 
 
@@ -321,10 +321,10 @@ button.titant {
 	font-family: 'Barlow';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 32px;
+	font-size: 1.125rem;
+	line-height: 2rem;
 	/* or 178% */
-	padding-top: 28px;
+	padding-top: 1.75rem;
 
 
 	color: #D0D6F9;
@@ -336,8 +336,8 @@ button.titant {
 	font-family: 'Bellefair';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 28px;
-	line-height: 32px;
+	font-size: 1.75rem;
+	line-height: 2rem;
 	/* identical to box height */
 
 	text-transform: uppercase;
@@ -345,13 +345,13 @@ button.titant {
 	color: #FFFFFF;
 }	
 .buttonDetails{
-	width: 445px;
-	height: 472px;
+	width: 27.813rem;
+	height: 29.5rem;
 }
 
 .moonpicture{
-	width:450px;
-	padding-right:157px;
+	width:28.125rem;
+	padding-right:9.813rem;
 }
 
 .insideDest body {
@@ -361,7 +361,7 @@ button.titant {
 .bottomparagraph{
 	display:grid;
 	grid-template-columns: 5fr 4fr;
-	width:344px;
+	width:21.5rem;
 }
 
 .bottomparagraph p{
@@ -369,7 +369,7 @@ button.titant {
 }
 
 .linepara{
-	border-top: 1px solid ;
+	border-top: 0.063rem solid ;
 background: #383B4B;
 }
 
@@ -379,11 +379,11 @@ background: #383B4B;
 	font-family: 'Barlow Condensed';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 28px;
-	line-height: 34px;
+	font-size: 1.75rem;
+	line-height: 2.125rem;
 	/* identical to box height */
-	padding-left: 166px;
-	letter-spacing: 4.725px;
+	padding-left: 10.375rem;
+	letter-spacing: 0.295rem;
 	text-transform: uppercase;
 	color: #FFFFFF;
 }
@@ -392,11 +392,11 @@ background: #383B4B;
 	font-family: 'Barlow Condensed';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 28px;
-	line-height: 34px;
+	font-size: 1.75rem;
+	line-height: 2.125rem;
 	/* identical to box height */
 
-	letter-spacing: 4.725px;
+	letter-spacing: 0.295rem;
 	text-transform: uppercase;
 
 	color: #FFFFFF;
@@ -405,11 +405,11 @@ background: #383B4B;
 	font-family: 'Barlow Condensed';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 28px;
-	line-height: 34px;
+	font-size: 1.75rem;
+	line-height: 2.125rem;
 	/* identical to box height */
 
-	letter-spacing: 4.725px;
+	letter-spacing: 0.295rem;
 
 	color: #FFFFFF;
 
@@ -421,8 +421,8 @@ background: #383B4B;
 	font-family: 'Bellefair';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 32px;
-	line-height: 37px;
+	font-size: 2rem;
+	line-height: 2.313rem;
 	/* identical to box height */
 	text-transform: uppercase;
 
@@ -436,12 +436,12 @@ background: #383B4B;
 	font-family: 'Bellefair';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 56px;
-	line-height: 64px;
+	font-size: 3.5rem;
+	line-height: 4rem;
 	text-transform: uppercase;
 
-	padding-top:15px;
-	padding-bottom:27px;
+	padding-top:0.938rem;
+	padding-bottom:1.688rem;
 	color: #FFFFFF;
 }
 
@@ -450,8 +450,8 @@ background: #383B4B;
 	font-family: 'Barlow';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 32px;
+	font-size: 1.125rem;
+	line-height: 2rem;
 	/* or 178% */
 
 
@@ -461,17 +461,17 @@ background: #383B4B;
 	margin:0;
 }
 .crewparag{
-	width:488px;
-	padding-left:165px;
+	width:30.5rem;
+	padding-left:10.313rem;
 	float:left;
-	padding-right:81px;	
-	padding-top:154px;
+	padding-right:5.063rem;	
+	padding-top:9.625rem;
 }
 
 .first,.second,.third,.fourth{
 	border-radius:100%;
-	width:15px;
-	height:15px;
+	width:0.938rem;
+	height:0.938rem;
 	padding:0;
 	margin:0;
 	border:0;
@@ -498,9 +498,9 @@ opacity:0.91;
 	opacity: 0.91;
 }
 .crewbuttons{
-	width:132px;
+	width:8.25rem;
 	display:contents;
-	height:15px;
+	height:0.938rem;
 }
 .douglos{
 	display:inline;
@@ -512,11 +512,11 @@ opacity:0.91;
 	font-family: 'Barlow Condensed';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 28px;
-	line-height: 34px;
+	font-size: 1.75rem;
+	line-height: 2.125rem;
 	/* identical to box height */
 
-	letter-spacing: 4.725px;
+	letter-spacing: 0.295rem;
 
 	color: #FFFFFF;
 
@@ -527,11 +527,11 @@ opacity:0.91;
 	font-family: 'Barlow Condensed';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 28px;
-	line-height: 34px;
+	font-size: 1.75rem;
+	line-height: 2.125rem;
 	/* identical to box height */
 
-	letter-spacing: 4.725px;
+	letter-spacing: 0.295rem;
 
 	color: #FFFFFF;
 }
@@ -540,9 +540,9 @@ opacity:0.91;
 	font-family: 'Barlow Condensed';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
-	line-height: 19px;
-	letter-spacing: 2.7px;
+	font-size: 1rem;
+	line-height: 1.188rem;
+	letter-spacing: 0.169rem;
 
 	color: #D0D6F9;
 }
@@ -551,22 +551,22 @@ opacity:0.91;
 	font-family: 'Bellefair';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 56px;
-	line-height: 64px;
+	font-size: 3.5rem;
+	line-height: 4rem;
 	color: #FFFFFF;
 }
 .launchdiv{
 	display:flex;
 	flex-direction:row;
-	padding-left:80px;
+	padding-left:5rem;
 }
 .techpara{
 
 	font-family: 'Barlow';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 32px;
+	font-size: 1.125rem;
+	line-height: 2rem;
 	/* or 178% */
 
 
@@ -575,23 +575,23 @@ opacity:0.91;
 
 
 .techparag{
-	width:470px;
+	width:29.375rem;
 }
 
 .circleone , .circletwo, .circlethree{
 	all:unset;
-	width: 80px;
-	height: 80px;
+	width: 5rem;
+	height: 5rem;
 	border-radius:50%;
 	font-family: 'Bellefair';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 32px;
-	line-height: 37px;
+	font-size: 2rem;
+	line-height: 2.313rem;
 	/* identical to box height */
-	border: 1px  solid #FFFFFF;
+	border: 0.063rem  solid #FFFFFF;
 	text-align: center;
-	letter-spacing: 2px;
+	letter-spacing: 0.125rem;
 	mix-blend-mode: normal;
 	opacity: 0.25;
 	color: #FFFFFF;
@@ -619,14 +619,14 @@ opacity:0.91;
 	display:flex;
 	flex-direction: column;
 	justify-content:space-between;
-	padding-left:165px;
+	padding-left:10.313rem;
 }
 
 @media  screen and (max-width:768px){
 	.app{
 		background-repeat: no-repeat;
 		background-size: cover;
-		margin:0px;
+		margin:0rem;
 
 	}
 	.textandexplore{

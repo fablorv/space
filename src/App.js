@@ -11,13 +11,9 @@ import markpic from "./assets/crew/image-mark-shuttleworth.png";
 import victorpic from "./assets/crew/image-victor-glover.png";
 import homebackground from "./assets/home/background-home-desktop.jpg";
 
-import homebacktablet from "./assets/home/background-home-tablet.jpg";
 import technologybackground from "./assets/technology/background-technology-desktop.jpg";
 import crewbackground from "./assets/crew/background-crew-desktop.jpg";
 import destinationbackground from "./assets/destination/background-destination-desktop.jpg";
-import technotablet from "./assets/technology/background-technology-tablet.jpg"
-import crewtablet from "./assets/crew/background-crew-tablet.jpg"
-import destinationtablet from "./assets/destination/background-destination-tablet.jpg"
 
 
 import spacecappic from "./assets/technology/image-space-capsule-portrait.jpg"
