@@ -478,6 +478,7 @@ background: #383B4B;
 	background: #FFFFFF;
 	opacity: 0.17;
 	mix-blend-mode: normal;
+	margin-right:1.1rem;
 }
 
 .first:hover{
@@ -499,8 +500,13 @@ opacity:0.91;
 }
 .crewbuttons{
 	width:8.25rem;
-	display:contents;
-	height:0.938rem;
+	position:fixed;
+	right:0;
+	left:0;
+	top:0;
+	z-index:999;
+	margin-top:49.438rem;
+	margin-left:10.438rem;
 }
 .douglos{
 	display:inline;
