@@ -554,6 +554,7 @@ opacity:0.91;
 	font-size: 3.5rem;
 	line-height: 4rem;
 	color: #FFFFFF;
+	margin:0;
 }
 .launchdiv{
 	display:flex;
@@ -569,6 +570,7 @@ opacity:0.91;
 	line-height: 2rem;
 	/* or 178% */
 
+	margin-top:1.1rem;
 
 	color: #D0D6F9;
 }
@@ -576,8 +578,12 @@ opacity:0.91;
 
 .techparag{
 	width:29.375rem;
+	margin-right:9.75rem;
 }
-
+.sentencestart{
+	margin-left:10.413rem;
+	margin-bottom:8.563rem;
+}
 .circleone , .circletwo, .circlethree{
 	all:unset;
 	width: 5rem;
@@ -595,6 +601,7 @@ opacity:0.91;
 	mix-blend-mode: normal;
 	opacity: 0.25;
 	color: #FFFFFF;
+	margin-bottom:2rem;
 }
 
 .circleone:hover{
@@ -618,8 +625,11 @@ opacity:0.91;
 .techbuttons{
 	display:flex;
 	flex-direction: column;
-	justify-content:space-between;
 	padding-left:10.313rem;
+}
+
+.launchpic{
+	width:32.188rem;
 }
 
 @media  screen and (max-width:768px){

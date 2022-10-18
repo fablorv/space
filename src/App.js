@@ -315,7 +315,7 @@ const Technology = () =>{
 	}
 	return(
 		<div className="technologyD">
-			<p>  <span className="technum"> 03</span><span className="spacelaunch"> Space launch 101 </span></p>
+			<p className="sentencestart">  <span className="technum"> 03</span><span className="spacelaunch"> Space launch 101 </span></p>
 			<div className="techbottom">
 				<div className="techbuttons">
 					<button className="circleone" onClick={()=> circleone()}> 1 </button>
