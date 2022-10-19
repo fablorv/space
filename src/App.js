@@ -23,6 +23,7 @@ import {useState} from 'react'
 
 function App() {
 	//i think best way to do it just make useeffect hook and everytime u click u refresh iq and trigger the function taht sends info to the other function about data
+	//https://neovim.io/doc/user/windows.html#window-moving
 	const [data, setData] = useState('')
 	const [ctyle, setCtyle] = useState({backgroundImage: `url(${homebackground})` })	
 	const [everything , setEverything] = useState('homeE')
@@ -257,7 +258,7 @@ const Douglas = () =>{
 				<p className="comname">DOUGLAS HURLEY </p>
 				<p className="compara"> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
 			</div>
-			<img src={douglaspic} alt="douglas pic here" className="compic" />
+			<img src={douglaspic} alt="douglas pic here" className="douglaspic" />
 
 		</div>
 	)
@@ -270,7 +271,7 @@ const Mark = () =>{
 				<p className="comname">DOUGLAS HURLEY </p>
 				<p className="compara"> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
 			</div>
-			<img src={markpic} alt="douglas pic here" className="compic" />
+			<img src={markpic} alt="douglas pic here" className="markpic" />
 
 		</div>
 	)
@@ -283,7 +284,7 @@ const Anoushes = () =>{
 				<p className="comname">DOUGLAS HURLEY </p>
 				<p className="compara"> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
 			</div>
-			<img src={anoushespic} alt="douglas pic here" className="compic" />
+			<img src={anoushespic} alt="douglas pic here" className="anoushespic" />
 
 		</div>
 	)
@@ -296,7 +297,7 @@ const Victor = () =>{
 				<p className="comname">DOUGLAS HURLEY </p>
 				<p className="compara"> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
 			</div>
-			<img src={victorpic} alt="douglas pic here" className="compic" />
+			<img src={victorpic} alt="douglas pic here" className="victorpic" />
 
 		</div>
 	)
