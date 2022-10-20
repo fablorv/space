@@ -122,9 +122,10 @@ const Testing = () =>{
 							<button className="marst" onClick={() => marst()}>MARS </button>
 							<button className="europat" onClick={() => europat()}> EUROPA </button>
 							<button className="titant" onClick={() => titant()}>TITAN</button>
+						</div>
+			
 							<SmallCondition stato={planet.planet}/>
 								
-						</div>
 					</div>
 					
 				</div>
@@ -236,7 +237,7 @@ const Crew = () =>{
 	console.log(crewto)
 	return(
 		<div className="crewd">
-			<p className="meetcrew"> <span className="meetcrewnumber"> 02 </span><span className="meetcrewp">Meet your crew Commander</span> </p>
+			<p className="meetcrew"> <span className="mreetcrewnumber"> 02 </span><span className="meetcrewp">Meet your crew</span> </p>
 			<Crewcondition {...crewto} className="douglos" />
 			<div className="crewbuttons">
 				<button className="first" onClick={() => douglas()}/>
@@ -267,9 +268,9 @@ const Mark = () =>{
 	return(
 		<div className="crewstuff">
 			<div className="crewparag">
-				<p className="comm">COMMANDER  </p>
-				<p className="comname">DOUGLAS HURLEY </p>
-				<p className="compara"> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+				<p className="comm">MISSION SPECIALIST  </p>
+				<p className="comname">MARK SHUTTLEWORTH</p>
+				<p className="compara"> Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
 			</div>
 			<img src={markpic} alt="douglas pic here" className="markpic" />
 
@@ -280,9 +281,9 @@ const Anoushes = () =>{
 	return(
 		<div className="crewstuff">
 			<div className="crewparag">
-				<p className="comm">COMMANDER  </p>
-				<p className="comname">DOUGLAS HURLEY </p>
-				<p className="compara"> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+				<p className="comm">Flight Engineer</p>
+				<p className="comname">Anousheh Ansari </p>
+				<p className="compara"> Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. </p>
 			</div>
 			<img src={anoushespic} alt="douglas pic here" className="anoushespic" />
 
@@ -293,9 +294,9 @@ const Victor = () =>{
 	return(
 		<div className="crewstuff">
 			<div className="crewparag">
-				<p className="comm">COMMANDER  </p>
-				<p className="comname">DOUGLAS HURLEY </p>
-				<p className="compara"> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+				<p className="comm">PILOT</p>
+				<p className="comname">Victor Glover</p>
+				<p className="compara"> Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. </p>
 			</div>
 			<img src={victorpic} alt="douglas pic here" className="victorpic" />
 

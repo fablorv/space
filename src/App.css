@@ -8,6 +8,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height:100vh;
+
 	margin:0rem;
 
 }
@@ -23,11 +24,11 @@ body {
 	height:7rem;
 	display:flex;
 	align-items:center;
-	width:86.563rem;
+	justify-content:space-between;
 
 }
 .logo{
-	padding-right:31.6em;
+	padding-right:0;
 }
 
 .buttonscontrol{
@@ -38,7 +39,6 @@ body {
 	text-align:center;
 	border:none;
 	height:6rem;
-	width:51.875rem;
 	background: rgba(255, 255, 255, 0.04);
 	backdrop-filter: blur(10rem);
 }
@@ -53,6 +53,10 @@ body {
 	font-size: 1rem;
 	line-height: 1.188rem;
 	letter-spacing: 0.169rem;
+	margin-left:3.125em;
+}
+.technology{
+	margin-right:10.313em;
 }
 .home:hover {
 	border-bottom: 0.188rem solid rgba(255,255,255, 0.5);
@@ -100,11 +104,12 @@ body {
 
 .textandexplore {
 	display:flex;
-	justify-content:center;
+	justify-content:space-between;
 	margin-top:15.688em;
+	width:90%;
 }
 .text{
-	margin-right:24.125em;
+	margin-left:10.313em;
 
 	width:28.125em;
 }
@@ -201,8 +206,8 @@ button.circle-hover:hover::before {
 .bottomPart{
 	display:flex;
 	flex-direction:row;
-	padding-left:14.375em;
 	padding-top:4em;
+	justify-content:space-around;
 	
 }
 .planetbuttons button{
@@ -219,9 +224,7 @@ button.circle-hover:hover::before {
 	padding-bottom:0.938em;
 	color: #FFFFFF;
 }
-.planetbuttons{
-	width:18.75rem;
-}
+
 .moont {
 		border-bottom: 0.188rem solid rgba(255,255,255, 0);
 }
@@ -260,7 +263,6 @@ button.titant {
 	font-size: 6.25rem;
 	line-height: 7.188rem;
 	/* identical to box height */
-	width:20.813rem;
 	margin-top:0.117em;
 	color: #FFFFFF;
 }
@@ -345,14 +347,10 @@ button.titant {
 
 	color: #FFFFFF;
 }	
-.buttonDetails{
-	width: 27.813rem;
-	height: 29.5rem;
-}
+
 
 .moonpicture{
 	width:28.125rem;
-	padding-right:9.813em;
 }
 
 .insideDest body {
@@ -362,7 +360,6 @@ button.titant {
 .bottomparagraph{
 	display:grid;
 	grid-template-columns: 5fr 4fr;
-	width:21.5rem;
 }
 
 .bottomparagraph p{
@@ -655,12 +652,18 @@ opacity:0.91;
 		background-repeat: no-repeat;
 		background-size: cover;
 		margin:0rem;
+		max-width:768px;
 
 	}
 	.textandexplore{
 		flex-direction:column;
 		margin-top:6.625em;
 		margin-left:9.938em;
+		width:50%;
+	}
+	.text{
+		margin-left:0em;
+		text-align:center;
 	}
 	.text1{
 		font-family: 'Barlow Condensed';
@@ -676,8 +679,12 @@ opacity:0.91;
 	
 	}
 	.header{
-		padding:0;
+		padding-left:2.438em;
+		padding-top:0;
 		height:6rem;
+	}
+	.home, .crew, .destination , .technology{
+		margin:0;
 	}
 	button.circle-hover{
 		margin-left:6.5em;
@@ -685,7 +692,9 @@ opacity:0.91;
 	}
 	.homeE{
 		background-image: url('assets/home/background-home-tablet.jpg');
-		color:black;
+		height:100vh;	
+		margin:0rem;
+
 	}
 	.crewE{
 		background-image: url('assets/crew/background-crew-tablet.jpg');
@@ -695,5 +704,87 @@ opacity:0.91;
 	}
 	.techE{
 		background-image: url('assets/technology/background-technology-tablet.jpg');
+	}
+	.buttonscontrol{
+		width:65%
+	}
+	.bottomPart{
+		flex-direction:column;
+		
+	}
+	.moonpicture{
+		width:18.75em;
+		margin-left:30%;
+		margin-bottom:10%;
+	}
+	
+	.pickdest{
+		padding-left:1.2em;
+		font-size:1.25em;
+	}
+	.planets{
+		margin-left:20%;
+	}
+	.planetbuttons{
+		margin-left:16%;
+	}
+	.moonb{
+		font-size:5em;
+		margin-left:15%;
+		margin-right:0;
+	}
+	.moonpara{
+		text-align:center;
+		font-size:1em;
+		width:90%;
+	}
+	.linepara{
+		width:90%;
+		border:1px solid;
+	}
+	.bottomPart{
+		padding-top:3.75em;
+	}
+	.crewparag{
+		padding:0;
+		margin-top:2.55em;
+		margin-left:18%;
+		text-align:center;
+	}
+	.comname{
+		font-size:2.5em;
+		padding:0;
+		margin-top:.5em;
+		margin-bottom:1em;
+	}
+	.meetcrew{
+		font-size:1.25em;
+		padding:0;
+		margin-left:-60%;
+	}
+	.meetcrewnumber{
+		font-size:1.25em;
+	}
+	.meetcrewp{
+		font-size:1.25rem;
+	}
+	.comm{
+		font-size:1.5em;
+	}
+	.crewd{
+		text-align:center;
+	}
+	.douglaspic, .markpic,  .anoushespic{
+		height:45vh;
+		margin-top:8%;
+	}
+	.victorpic{
+		height:44vh;
+		margin-top:5%;
+	}
+	.crewbuttons{
+		margin-left:18.25rem;
+		margin-top:31.625rem;
+	
 	}
 }
