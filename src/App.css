@@ -55,6 +55,9 @@ body {
 	letter-spacing: 0.169rem;
 	margin-left:3.125em;
 }
+.crewstuff{
+	display:flex;
+}
 .technology{
 	margin-right:10.313em;
 }
@@ -373,16 +376,23 @@ background: #383B4B;
 
 .douglaspic{
 	height:655px;
+	width:33%
 }
 .markpic{
 	margin-top:0.9em;
+	width:33%
+
 }
 
 .anoushespic{
 	margin-top:3.25em;
+	width:33%
+
 }
 .victorpic{
 	margin-top:0.6em;
+	width:33%
+
 }
 .meetcrew{
 	font-family: 'Barlow Condensed';
@@ -575,6 +585,8 @@ opacity:0.91;
 	display:flex;
 	flex-direction:row;
 	padding-left:5em;
+	width:100%;
+	justify-content:space-between;
 }
 .techpara{
 
@@ -592,7 +604,7 @@ opacity:0.91;
 
 
 .techparag{
-	width:29.375rem;
+	max-width:29.375rem;
 	margin-right:8em;
 }
 .sentencestart{
@@ -643,9 +655,7 @@ opacity:0.91;
 	padding-left:10.313em;
 }
 
-.launchpic{
-	width:32.188rem;
-}
+
 
 @media  screen and (max-width:768px){
 	.app{
@@ -773,21 +783,51 @@ opacity:0.91;
 		text-align:center;
 	}
 	.douglaspic{
-		height:48vh;
-		margin-top:3%;
+		height:45vh;
+		margin-top:19%;
+		width:auto;
 	}
 	.victorpic{
 		height:40vh;
-		margin-top:8%;
+		margin-top:21%;
+		width:auto;
 	}
 	 .markpic,  .anoushespic{
 		height:40vh;
-		margin-top:13%;
+		margin-top:26%;
+		width:auto;
 	}
 
 	.crewbuttons{
 		margin-left:18.25rem;
 		margin-top:31.625rem;
 	
+	}
+	.techbottom{
+		flex-direction:column;
+	}
+	.techbuttons{
+		flex-direction:row;
+		justify-content:space-around;
+		width:50%;
+	}
+	.launchdiv{
+		flex-direction:column;
+		padding:0;
+	}
+	.launchpic{
+		width:100%;
+		height:20vh;
+	}
+	.techparag{
+		text-align:center;
+		margin-left:17%;
+	}
+	.sentencestart{
+		margin-left:5%;
+		margin-bottom:5%;
+	}
+	.crewstuff{
+		display:block;
 	}
 }
