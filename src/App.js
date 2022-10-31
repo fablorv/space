@@ -19,7 +19,10 @@ import destinationbackground from "./assets/destination/background-destination-d
 import spacecappic from "./assets/technology/image-space-capsule-portrait.jpg"
 import spaceportpic from "./assets/technology/image-spaceport-portrait.jpg"
 import launchpic from "./assets/technology/image-launch-vehicle-portrait.jpg";
-import {useState} from 'react'
+
+import {ReactComponent as Buttonpic} from "./assets/shared/icon-hamburger.svg"
+import {ReactComponent as Closebutton} from "./assets/shared/icon-close.svg"
+import {useState, useEffect} from 'react'
 
 function App() {
 	//i think best way to do it just make useeffect hook and everytime u click u refresh iq and trigger the function taht sends info to the other function about data
@@ -27,6 +30,9 @@ function App() {
 	const [data, setData] = useState('')
 	const [ctyle, setCtyle] = useState({backgroundImage: `url(${homebackground})` })	
 	const [everything , setEverything] = useState('homeE')
+	const [headerButton, setHeaderButton] = useState(false)
+	const [mobile , setMobile] = useState()
+	const [buttonstat, setButtonstat] = useState(false)
 	
 			const homeig = () =>{
 				setData({state:"home clicked"})
@@ -45,11 +51,42 @@ function App() {
 				setEverything('crewE')
 			}
 			const techig = () =>{
+
 				setData({state:"tech clicked"})
 				setCtyle({backgroundImage:`url(${technologybackground})`})
 				setEverything('techE')
 			}
-		console.log(data)
+			const headerbutt = () =>{
+				setHeaderButton(true)
+				setButtonstat(false)
+			}
+			const closebutt = () =>{
+				setButtonstat(true)
+				setHeaderButton(false)
+			}
+		let w = window.innerWidth
+		useEffect(() => {
+			setMobile(window.innerWidth)
+			console.log(12, mobile)		
+		},[mobile])
+		let className= "mobileheaderoff"
+		let svgbutton = "burgeroff"
+		let background ="blurbackoff"
+		if(mobile < 375){
+			svgbutton = "burgeron"
+			console.log("finally it worked or we need more ?")
+		}else console.log("it didnt work sadly")
+		if(headerButton){
+			className = 'mobileheaderon'
+			svgbutton ='burgeroff'
+			background ='blurbackon'
+		}
+		if(buttonstat){
+			className = 'mobileheaderoff'
+			svgbutton ='burgeron'
+			background ='blurbackoff'
+		}
+		console.log("this is headerbutt:", headerButton, "this is close butt:", buttonstat)
 		 return (
 		    <div className="App" style={ctyle}>
 			 <div className={everything}>
@@ -63,7 +100,27 @@ function App() {
 						<button className="crew"onClick={() => crewig()}>02 CREW  </button>
 						<button className="technology" onClick={()=> techig()}>03 TECHNOLOGY </button>
 					</div>
+			 		
+					 <div className="mobileheader">
+						<button className="home" onClick={() => homeig()}>HOME </button>
+						<button className="destination" onClick={() => destinationig()}>DESTINATION </button>
+						<button className="crew"onClick={() => crewig()}>CREW  </button>
+						<button className="technology" onClick={()=> techig()}>TECHNOLOGY </button>
+					 </div>
+			 		<button className={svgbutton} onClick={() =>headerbutt()}> <Buttonpic/></button>	
+					<div className={background}>	
+						<div className={className} >
+			 				<button className="close" onClick={() => closebutt()}	><Closebutton/></button>
+							<button className="home" onClick={() => homeig()}> 01 HOME </button>
+							<button className="destination" onClick={() => destinationig()}> 02 DESTINATION </button>
+							<button className="crew"onClick={() => crewig()}> 03 CREW  </button>
+							<button className="technology" onClick={()=> techig()}> 04 TECHNOLOGY </button>
+			 				
+						 </div>
+			 		</div>
+
 				  </div>
+
 				 <Condition state={data.state}/>
 			 </div>
 		     </div>

@@ -659,7 +659,25 @@ opacity:0.91;
 	padding-left:10.313em;
 }
 
+.burgeroff{
+	display:none;
+}
+.burgeron{
+	display:none;
+}
 
+.mobileheaderoff{
+	display:none;
+}
+.mobileheader{
+	display:none;
+}
+.mobileheaderon{
+	display:none;
+}
+.blurbackoff{
+	display:none;
+}
 
 @media  screen and (max-width:768px){
 	.app{
@@ -671,7 +689,7 @@ opacity:0.91;
 	}
 	.textandexplore{
 		flex-direction:column;
-		margin-top:6.625em;
+		margin-top:4.5em;
 		margin-left:20%;
 		width:50%;
 	}
@@ -679,6 +697,15 @@ opacity:0.91;
 		margin-left:0em;
 		text-align:center;
 		width:100%;
+	}
+	.mobileheaderon{
+		display:none;
+	}
+	.burgeron{
+		display:none;
+	}
+	.blurbackoff{
+		display:none;
 	}
 	.text1{
 		font-family: 'Barlow Condensed';
@@ -724,8 +751,23 @@ opacity:0.91;
 		background-image: url('assets/technology/background-technology-tablet.jpg');
 	}
 	.buttonscontrol{
-		width:65%
+		display:none;
 	}
+	.mobileheader {
+	  display: flex;
+	  justify-content: space-around;
+	  flex-direction: row;
+	  text-decoration: none;
+	  text-align: center;
+	  border: none;
+	  height: 6rem;
+          width:65%;
+
+	  background: rgba(255, 255, 255, 0.04);
+	  -webkit-backdrop-filter: blur(10rem);
+	  backdrop-filter: blur(10rem);
+	}
+		
 	.bottomPart{
 		flex-direction:column;
 		
@@ -873,10 +915,119 @@ opacity:0.91;
 	}
 	.textandexplore{
 		margin-left:24px;
-		width:100%;
+		width:90%;
 	}
 	.parag{
 		width:90%;
 	}
+	.mobileheader{
+		display:none;
+	}
+	.burgeron{
+		display:block;
+	}
+	.burgeroff{
+		display:none;
+	}
+	.mobileheaderoff{
+		display:none;
+	}
+	.mobileheaderon{
+		display:flex;
+		flex-direction:column;
+		justify-content: space-around;
+		height:28%;
+		padding-top:118px;
+		padding-left:32px;
+	}
 
+	.blurbackon{
+		background: rgba(255, 255, 255, 0.4);
+		z-index:1;
+		backdrop-filter: blur(40.7742px);
+		display:block;
+		position:absolute;
+		right:0;
+		top: 0px;
+		left: 121px;
+		height:100%;
+		
+	}
+	.close{
+		position:absolute;
+
+		left: 208px;
+		top: 15px;
+	}
+	.moonb{
+		margin-left:0;
+		font-size:56px;
+		margin:0;
+		line-height:100%;
+	}
+	.moonpicture{
+		width:10em;
+	}
+	.planetbuttons button{
+		font-size:0.8em;
+	}
+	.planetbuttons{
+		margin:0;
+		text-align:center;
+		padding-left:14%
+	
+	}
+	.moonpara{
+		font-size:0.9em;
+		padding-bottom:1%;
+	}
+	.Moont{
+		padding-left:10%;
+		text-align:center;
+		margin:0;
+
+
+	}
+	.pickdest{
+		font-size:1em;
+	}
+	.bottomparagraph{
+		grid-template-columns:1fr;
+		text-align:center;
+		margin-left:-10%;
+		
+		
+	}
+	.bottomPart{
+		padding:0;
+	}
+	.lastparamoon{
+			grid-row:1;
+			grid-column:1;
+			padding-top:1%;
+	}
+	.travel{
+			grid-row:3;
+			grid-column:1;
+	}
+	.distnumbers{
+			grid-row:2;
+			grid-column:1;
+	}
+	.travelnumbers{
+			grid-row:4;
+			grid-column:1;
+	}
+	.distnumbers{
+		width:auto;
+	}
+	.lastparamoon, .travel{
+		font-size:0.8em;
+	}
+	.planets{
+		margin:0;
+	}
+	.bottompart{
+		padding:0;
+	}
 }
